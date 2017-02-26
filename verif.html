@@ -3,14 +3,14 @@
     <script>
 function checkCode() {
   var codeverif = document.getElementById('code');
-  if (codeverif.match(/^([a-zA-Z0-9])$/)) {
+  if (codeverif.match(/^[a-zA-Z0-9])+$/) {
 alert('Le code ne comprend que des lettres et des chiffres');
     return false;
   }
-else {function genereUrl() {
+else function genereUrl() {
         window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
-      }
-}  
+      
+}}  
    
 	  
     </script>
