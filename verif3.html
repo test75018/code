@@ -5,16 +5,14 @@
 <script>
 function verif()
 {
-   var test = document.getElementById('code')[0].value;
+   var test = document.getElementById('code').value;
    if(test.match(/^[a-zA-Z0-9]*$/))
    {
       window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
-   return false;
-   }
+     }
    else
    {
 	alert("Le code se compose de lettres et de chiffres");
-      return true;
    }
 }
 
