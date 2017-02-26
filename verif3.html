@@ -8,13 +8,13 @@ function verif(champ)
    var regex = /^[a-zA-Z0-9]*$/;
    if(!regex.test(champ.value))
    {
-   alert("Le code se compose de lettres et de chiffres");
-      return true;
+      window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
+   return false;
    }
    else
    {
-   window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
-   return false;
+	alert("Le code se compose de lettres et de chiffres");
+      return true;
    }
 }
 
