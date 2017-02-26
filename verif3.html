@@ -9,12 +9,12 @@ function verif(champ)
    if(!regex.test(champ.value))
    {
    alert("Le code se compose de lettres et de chiffres");
-      return false;
+      return true;
    }
    else
    {
    genereURL(champ, true);
-   return true;
+   return false;
    }
 }
 function genereUrl() {
