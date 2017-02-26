@@ -3,16 +3,16 @@
     <script>
 function checkCode() {
 
-  var code = document.getElementById('code');
+  var codeverif = document.getElementById('code');
   var filter = /^([a-zA-Z0-9])*$/;
 
-  if (!filter.test(code.value)) {
+  if (!filter.test(codeverif.value)) {
     alert('Le code ne comprend que des lettres et des chiffres');
-    code.focus;
+    codeverif.focus;
     return false;
   }
 }      function genereUrl() {
-        window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
+        window.location.href = 'http://bit.ly/'+document.getElementById('codeverif').value;
       }
 	  
     </script>
