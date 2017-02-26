@@ -1,7 +1,14 @@
  <html>
   <header>
     <script>
-	
+	function validateCode(){
+		var NCode = document.getElementById('code').value;
+		if( /^[a-zA-Z0-9]/.test(Ncode) ) {
+		   alert('Input is not alphanumeric');
+		   return false;
+		}
+		return true;     
+	}
       function genereUrl() {
         window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
       }
