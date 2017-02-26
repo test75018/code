@@ -1,19 +1,17 @@
-<html>
+ <html>
   <header>
     <script>
-function checkCode() {
-  var codeverif = document.getElementById('code');
-  if (codeverif.match(/^[a-zA-Z0-9]+$/) {
-function genereUrl() {
+	function validateCode(){
+		var NCode = document.getElementById('code').value;
+		if( /[^a-zA-Z0-9]/.test(Ncode) ) {
+		   alert('Input is not alphanumeric');
+		   return false;
+		}
+		return true;     
+	}
+      function genereUrl() {
         window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
-      
-}}
-else  alert('Le code ne comprend que des lettres et des chiffres');
-    return false;
-  }
-
-   
-	  
+      }
     </script>
   </header>
   <body>
@@ -21,4 +19,3 @@ else  alert('Le code ne comprend que des lettres et des chiffres');
     <input type="button" value="Entrer" onclick="genereUrl()">
   </body>
 </html>
-
