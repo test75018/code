@@ -3,7 +3,7 @@
 
 
 <script>
-function verif(champ)
+function verif()
 {
    var regex = /^[a-zA-Z0-9]*$/;
    if(!regex.test(champ.value))
@@ -23,7 +23,7 @@ function verif(champ)
   <body>
   
   <input type="text" id="code" size="30"/>
-    <input type="button" value="Entrer" onclick="verif(champ)"/>
+    <input type="button" value="Entrer" onclick="verif()"/>
 	
 	  </body>
 </html>
