@@ -4,16 +4,14 @@
 function checkCode() {
 
   var codeverif = document.getElementById('code');
-  var filter = /^([a-zA-Z0-9])*$/;
-
-  if (!filter.test(codeverif.value)) {
-    alert('Le code ne comprend que des lettres et des chiffres');
-    codeverif.focus;
+  if (codeverif.match(/^([a-zA-Z0-9])+$/)) {
+   function genereUrl() {
+        window.location.href = 'http://bit.ly/'+document.getElementById('codeverif').value;
+      }}
+else {alert('Le code ne comprend que des lettres et des chiffres');
     return false;
   }
-}      function genereUrl() {
-        window.location.href = 'http://bit.ly/'+document.getElementById('codeverif').value;
-      }
+}      
 	  
     </script>
   </header>
@@ -22,3 +20,4 @@ function checkCode() {
     <input type="button" value="Entrer" onclick="genereUrl()">
   </body>
 </html>
+
