@@ -13,20 +13,17 @@ function verif(champ)
    }
    else
    {
-   genereURL(champ, true);
+   window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
    return false;
    }
 }
-function genereUrl() {
-        window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
-      }
 
 </script>
  </header>
   <body>
   
   <input type="text" id="code" size="30"/>
-    <input type="button" value="Entrer" onclick="verif()"/>
+    <input type="button" value="Entrer" onclick="verif(champ)"/>
 	
 	  </body>
 </html>
