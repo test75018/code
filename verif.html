@@ -1,0 +1,24 @@
+<html>
+  <header>
+    <script>
+function checkCode() {
+
+  var code = document.getElementById('code');
+  var filter = /^([a-zA-Z0-9])*$/;
+
+  if (!filter.test(code.value)) {
+    alert('Le code ne comprend que des lettres et des chiffres');
+    code.focus;
+    return false;
+  }
+}      function genereUrl() {
+        window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
+      }
+	  
+    </script>
+  </header>
+  <body>
+    <input type="text" id="code" />
+    <input type="button" value="Entrer" onclick="genereUrl()">
+  </body>
+</html>
