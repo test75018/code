@@ -1,0 +1,32 @@
+<html>
+  <header>
+
+
+<script>
+function verif()
+{
+   var regex = /^[a-zA-Z0-9]*$/;
+   if(!regex.test(code.value))
+   {
+      genereURL(code, true);
+      return false;
+   }
+   else
+   {
+   alert("Le code se compose de lettres et de chiffres");
+   return true;
+   }
+}
+function genereUrl() {
+        window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
+      }
+
+</script>
+ </header>
+  <body>
+  
+  <input type="text" id="code" size="30"/>
+    <input type="button" value="Entrer" onclick="genereUrl()"/>
+	
+	  </body>
+</html>
