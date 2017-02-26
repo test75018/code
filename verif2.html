@@ -1,5 +1,6 @@
-    <input type="text" id="code" size="30" onblur="verifCode(this)/>
-    <input type="button" value="Entrer" onclick="return verifForm(this)">
+<html>
+  <header>
+
 
 <script>
 function surligne(champ, erreur)
@@ -29,6 +30,9 @@ function verifForm(f)
 {
    var codeOk = verifCode(f.code);
 	if(codeOk)
+	 {
+     genereUrl()
+   }
       return true;
    else
    {
@@ -42,3 +46,11 @@ function genereUrl() {
       }
 
 </script>
+ </header>
+  <body>
+  
+  <input type="text" id="code" size="30" onblur="verifCode(this)"/>
+    <input type="button" value="Entrer" onclick="return verifForm(this)">
+	
+	  </body>
+</html>
