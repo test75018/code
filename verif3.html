@@ -3,12 +3,12 @@
 
 
 <script>
-function verif()
+function verif(champ)
 {
    var regex = /^[a-zA-Z0-9]*$/;
-   if(!regex.test(code.value))
+   if(!regex.test(champ.value))
    {
-      genereURL(code, true);
+      genereURL(champ, true);
       return false;
    }
    else
