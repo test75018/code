@@ -1,7 +1,11 @@
 <html>
   <header>
     <script>
-function checkCode() {
+function genereUrl() {
+        window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
+      } 
+	    
+	    function checkCode() {
   var codeverif = document.getElementById('code');
   if (codeverif.match(/^([a-zA-Z0-9])$/)) {
    return true;}
@@ -9,9 +13,7 @@ else {alert('Le code ne comprend que des lettres et des chiffres');
     return false;
   }
 }  
-function genereUrl() {
-        window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
-      }   
+  
 	  
     </script>
   </header>
