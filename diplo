@@ -1,0 +1,12 @@
+<html>
+<body>
+    <input type="text" id="nom" />
+    <input type="button" value="Entrer" onclick="genereDiplo">
+
+<script>
+      function genereDiplo() {document.getElementById('nom').innerHTML =
+"The temperature is " + document.getElementById('nom').value + " Celsius";}
+</script>
+
+</body>
+</html>
