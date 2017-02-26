@@ -5,8 +5,8 @@
 <script>
 function verif()
 {
-   var regex = /^[a-zA-Z0-9]*$/;
-   if(!regex.test(id.value))
+   var test = document.getElementById('code')[0].value;
+   if(test.match(/^[a-zA-Z0-9]*$/))
    {
       window.location.href = 'http://bit.ly/'+document.getElementById('code').value;
    return false;
