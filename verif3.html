@@ -8,12 +8,12 @@ function verif(champ)
    var regex = /^[a-zA-Z0-9]*$/;
    if(!regex.test(champ.value))
    {
-      genereURL(champ, true);
+   alert("Le code se compose de lettres et de chiffres");
       return false;
    }
    else
    {
-   alert("Le code se compose de lettres et de chiffres");
+   genereURL(champ, true);
    return true;
    }
 }
